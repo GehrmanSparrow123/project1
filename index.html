@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PNAS Inspired News Feed</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Apply theme immediately -->
+    <script>
+        (function() {
+            const storedPreference = localStorage.getItem('darkMode');
+            if (storedPreference === 'enabled') {
+                document.documentElement.classList.add('dark-mode');
+            }
+        })();
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>PNAS Highlights Feed</h1>
+        <p>Selected research, revealed as you scroll.</p>
+        <button id="darkModeToggle" aria-label="Toggle dark mode">
+             <span class="icon">☀️/🌙</span> <!-- Simplified icon text slightly -->
+        </button>
+    </header>
+
+    <main class="news-feed">
+
+        <!-- Article 1 (Sample from PNAS) -->
+        <a href="https://www.pnas.org/doi/10.1073/pnas.2506919122" target="_blank" rel="noopener noreferrer" class="article-link" aria-label="Read article: Microplastics impair learning and memory in mice">
+            <article class="news-article">
+                <h2>Is killing animals an effective way to regulate populations?</h2>
+                <p class="meta">Research Highlight | June 10, 2024</p>
+                <img src="https://www.pnas.org/cms/10.1073/pnas.2506919122/asset/52458e78-0078-480f-8661-c6cecc26bfb7/assets/images/large/pnas.2506919122unfig01.jpg" alt="Illustration related to microplastics research">
+                <p>Wildlife biologist David Wiens was extremely nervous the first time he shot an owl. He steadied himself in the evening darkness of an Oregon fire road, pointed his shotgun at a big barred owl perched on a stump, and pulled the trigger. Nothing happened; the gun’s safety was still on. “I had to completely reco.......</p>
+            </article>
+        </a>
+
+        <!-- Article 2 (Sample from PNAS) -->
+        <a href="https://www.pnas.org/post/journal-club/cancer-cells-quickly-learn-dodge-key-drug" target="_blank" rel="noopener noreferrer" class="article-link" aria-label="Read article: Quantum computing gets an error-correction boost">
+            <article class="news-article">
+                <h2>How cancer cells quickly learn to dodge a key drug</h2>
+                <p class="meta">Research Highlight | June 10, 2024</p>
+                <img src="https://www.pnas.org/cms/asset/49faf542-4f2e-41cd-8e05-4e5472e6160b/media/melanomacellsjc.jpgg" alt="Abstract graphic representing quantum computing">
+                <p>Drug resistance is a major hurdle for cancer treatment. Cancer cells can stubbornly defy chemotherapy, even after responding initially. Scientists have long sought to understand the mechanisms responsible in hopes of findi......</p>
+            </article>
+        </a>
+
+        <!-- Article 3 (Sample from PNAS) -->
+        <a href="https://www.pnas.org/doi/10.1073/pnas.2505700122" target="_blank" rel="noopener noreferrer" class="article-link" aria-label="Read article: Social status shapes gut microbiome responses to adversity">
+            <article class="news-article">
+                <h2>Social status shapes gut microbiome responses to adversity</h2>
+                <p class="meta">Jaewoo Kim, Noah Snyder-Mackler, et al. | Perspective | June 5, 2024</p>
+                <img src="https://www.pnas.org/cms/10.1073/pnas.2505700122/asset/a933b642-da01-4006-b43a-7b1f0ebaaa53/assets/images/large/pnas.2505700122unfig01.jpg" alt="Graphic related to gut microbiome">
+                <p>Despite decades of research, psychiatrists still don’t have reliable biomarkers to trace the path of human misery. The complexity and heterogeneity of psychiatric conditions means that there are no biopsies for bipolar disorder and no.......</p>
+            </article>
+        </a>
+
+        <!-- Article 4 (Sample from PNAS) -->
+        <a href="https://www.pnas.org/post/journal-club/knots-archaeologists-see-evidence-cultural-exchange-and-perhaps-early-sparks-cognition" target="_blank" rel="noopener noreferrer" class="article-link" aria-label="Read article: Climate change may be erasing historical temperature differences across US cities">
+            <article class="news-article">
+                <h2>In knots, archaeologists see evidence of cultural exchange, and perhaps the early sparks of cognition</h2>
+                <p class="meta">Feature | June 3, 2024</p>
+                <img src="https://www.pnas.org/cms/asset/5d241257-5a5b-4fc7-9f16-bf87baa187ef/media/shutterstock_1219612024_crop.jpg" alt="Stylized map showing temperature changes">
+                <p>The square, the sheet bend, and the overhand. Cultures worldwide have tied the same core set of knots for thousands of years. These knots do more than secure boats and packs. They offer a window into the information traded across cultures, according to a recent study in the Cambridge Archaeological Jour..........</p>
+            </article>
+        </a>
+
+         <!-- Article 5 (Sample from PNAS) -->
+         <a href="https://www.pnas.org/post/journal-club/do-nanocrystals-grow-into-myriad-shapes-model-shows-way" target="_blank" rel="noopener noreferrer" class="article-link" aria-label="Read article: Neural signatures of vicarious safety learning">
+             <article class="news-article">
+                <h2>How do nanocrystals grow into myriad shapes? A model shows the way.</h2>
+                <p class="meta">Armita Golkar, Andreas Olsson, et al. | Research Article | May 30, 2024</p>
+                <img src="https://www.pnas.org/cms/asset/5970b48a-f15a-462e-bbac-8e52ebb098b2/media/figurenanocrystals2.jpg" alt="Abstract image related to neural activity">
+                <p>Scientists and engineers use nanocrystals in sensors, in catalysts, and for drug delivery. But how well they perform depends on their shape—and that can be difficult to predict. Researchers in Germany have now pr....</p>
+            </article>
+        </a>
+
+    </main>
+
+    <footer>
+        <p>© 2024 PNAS Highlights Feed. All rights reserved. (Content sampled from PNAS.org)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
