@@ -49,8 +49,6 @@ html.dark-mode {
     --toggle-border: #b0b3b8;
 }
 
-/* ... (Keep all other styles: *, html, body, header, footer, .news-feed, .article-link, .news-article, etc. exactly the same as before) ... */
-
 /* Basic Reset & Body Styles */
 * {
     box-sizing: border-box;
@@ -170,10 +168,12 @@ html.dark-mode #darkModeToggle:hover {
     outline: none;
 }
 
+/* --- UPDATED HOVER EFFECT --- */
 .article-link:hover,
 .article-link:focus-visible {
     transform: translateY(-6px);
-    box-shadow: 0 10px 20px var(--article-shadow-hover);
+    /* Keep the original subtle shadow for depth and add a blue glow */
+    box-shadow: 0 10px 20px var(--article-shadow-hover), 0 0 15px 5px rgba(0, 123, 255, 0.5); /* Added blue glow */
 }
 
 /* Individual News Article Styles */
